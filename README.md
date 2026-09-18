@@ -93,7 +93,7 @@ The weights will look like this:<br>
        A:            [ 0.02   -0.07    0.04     .... ]
        Large:        [-0.03    0.05   -0.01     .... ]
        Language:     [ 0.06    0.01   -0.04     .... ]
-       ....<br>
+       ....
 
 Now let’s give the model the input “Large” to predict the next word and find the corresponding token Id<br>
 
