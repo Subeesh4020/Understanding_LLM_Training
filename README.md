@@ -3,28 +3,29 @@
 Large Language Models (LLMs) have become a major part of today’s AI landscape, but what actually happens behind the scenes when an LLM learns to generate text? Instead of treating an LLM as a black box, Uderstand its fundamental idea by building a very small example from scratch. In this blog, I’ll walk through the basic process step by step — from text and tokens to input-target pairs, predictions and training — to understand the core idea behind how an LLM learns to predict the next token.
 
 ## Prerequisites
-Basic knowledge of Python programming is recommended to follow along with the practical examples in this blog. No prior knowledge of machine learning or LLMs is required.
+Basic knowledge of Python programming is recommended to follow along with the practical examples in this blog.<br> No prior knowledge of machine learning or LLMs is required.<br>
 
-Let’s dive into practical examples without further explanation.
+Let’s dive into practical examples without further explanation.<br>
 
-First import the necessary libraries
-
-import random \n
+First import the necessary libraries<br>
+```python
+import random<br>
 import re
+``` <br>
 
 These libraries are used to generate random values and 
-to perform any regular expression operations
+to perform any regular expression operations<br>
 
-Now let’s use a simple sentence as training data for our LLM model
+Now let’s use a simple sentence as training data for our LLM model<br>
 
 raw_text = '''
     A Large Language Model (LLM) 
     is an AI system that learns from 
     large amounts of text to understand 
     and generate human-like language.
-'''
+'''<br>
 
-Next, let’s split the sentence into smaller pieces called tokens.
+Next, let’s split the sentence into smaller pieces called tokens.<br>
 
 tokens = re.split(r'([,.:;?_!"()\']|\s)', raw_text)
 
