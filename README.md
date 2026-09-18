@@ -11,7 +11,8 @@ First import the necessary libraries<br>
 ```python
 import random<br>
 import re
-``` <br>
+```
+<br>
 
 These libraries are used to generate random values and 
 to perform any regular expression operations<br>
